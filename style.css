@@ -1,0 +1,145 @@
+@font-face{
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff'),
+       
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import "reset.css";
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+
+}
+h2 {
+    color: #000000;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  a {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: black;
+    padding: 20px;
+    
+  }
+  a:hover {
+    color:hotpink;
+  }
+
+  #header {
+    width: 100vw;
+    height: 100vh;
+  }
+  img{
+
+      width: 100%;
+      height: 100%;
+      
+    
+  }
+  #start {
+    position: absolute;
+    top: 50%;
+    height: 240px;
+    margin-top: -80px;
+    
+  }
+  #start h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 130px;
+  }
+  #start p {
+    font-family: 'Hi Melody', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+p {
+    font-size: 6em;
+  }
+ 
+
+
+  #favorites h1 {
+    padding-top: 120px;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.5;
+  }
+
+
+
+  .hobby {
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .hobby_img {
+      
+    max-width: 200px;
+    max-height: 200px;
+    display : inline;
+    margin-top: 50px;
+    
+  }
+  .hobby_text {
+    margin-top: 100px;
+    font-family: 'Hi Melody', cursive;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .profile {
+    background: rgb(207, 132, 137);
+  }
+
+  .aboutme {
+    background: rgb(175, 154, 226);
+  }
+  
+ 
+  
+ 
+  
+  .sns {
+    background: rgb(255, 211, 99);
+    display: flex; flex-direction: row;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+
+  #icon_img{
+      width:10px;
+      height: 10px;
+      margin-top: 140px;
+      padding:5px;
+      
+  }
+  .sns a{
+      text-decoration: none;
+  }
