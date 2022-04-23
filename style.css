@@ -101,11 +101,11 @@ p {
 
   .hobby {
   text-align: center;
-  align-items: center;
+  
   justify-content: center;
   display: table-cell;
   vertical-align: middle;
-  height: 500px;; 
+  height: 500px;
  
   
   }
@@ -141,16 +141,72 @@ p {
   
  
   
-  .sns {
+.sns {
     background: rgb(255, 211, 99);
-    display: flex; flex-direction: row;
-    flex: 1;
-    text-align: center;
-    align-items: center;
-    justify-content: center; 
+    width: 100vw;
+    height: 100vh;
     }
+  
+/* 아이콘 수평정렬 + 가운데정렬 */
+    .sns ul{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      padding: 0;
+      margin: 0;
+      transform: translate(-50%, -50%);
+       display: flex;  /*가로정렬 */
+      
+  justify-content: center;
+  }
 
-  #icon_img{
+  /* 아이콘 간에 간격두기 */
+ .sns li{
+    list-style: none;
+    margin: 0 15px;
+} 
+
+.sns ul li .fab{
+  font-size: 30px;
+  line-height: 80px; 
+  transition: .3s;
+
+
+}
+
+
+/* 네모박스를 만든후 모서리를 동그랗게 만들어 원형도출/ 그림자가 서서히 생김(6s) */
+.sns ul li a{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  transition: .6s;
+   box-shadow: 0 5px 4px rgba(0,0,0,.5); 
+}
+
+/*커서를 대면 아이콘이 살짝올라감 */
+.sns ul li a:hover{
+  transform: translate(0%, -10%);
+}
+
+.sns ul li:nth-child(1) a:hover{
+  background-color: rgba(255, 245, 60);
+}
+.sns ul li:nth-child(2) a:hover{
+  background-color: #ffcdd6;
+}
+.sns ul li:nth-child(3) a:hover{
+  background-color: #c5f4ff;
+}
+.sns ul li:nth-child(4) a:hover{
+  background-color: #000;
+}
+
+  /* #icon_img{
       width:10px;
       height: 10px;
       margin-top: 140px;
@@ -160,4 +216,4 @@ p {
   }
   .sns a{
       text-decoration: none;
-  }
+  } */
