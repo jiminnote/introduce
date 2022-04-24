@@ -17,18 +17,20 @@
 }
 .title{
     color: #000000;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 30px;
     margin-bottom: 20px;
   }
+
 header a {
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     color: black;
-    padding: 20px;
-    line-height: 120px;
+    padding: 5px;
+     margin:17px;
+    line-height: 150px;
     
   }
   header a:hover {
@@ -100,22 +102,34 @@ p {
 
 
   .hobby {
+
+    
     width: 200px; 
     height: 200px;
    text-align: center;
   display: table-cell;
+  padding:20px;
+  
+  
+
   
   /* vertical-align: middle;  */
  
   }
  .up{
+  position: relative;
 width: 100%;
-height: 300px;
-
+height: 30%;
+text-align: center;
+margin-left:10%;
+ 
  }
   .under{
+    position: relative;
     width:100%;
-    height:600px;
+    height: 30%;
+    margin-left:10%;
+    text-align: center;
   }
   
 
