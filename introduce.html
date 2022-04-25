@@ -5,6 +5,22 @@
    <meta name="viewport" content="widt=device-width", initial-scale=1.0">
    <title>Introduce Myself</title>
    <style media="screen"  >
+ 
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translate3d(100%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translateZ(0);
+            }
+        }
+     
+        .test_obj {
+            position: relative;
+            animation: fadeInRight 1s;
+        }
     * {margin: 0; padding: 0;}
     body { overflow-x: hidden }
    
@@ -37,13 +53,17 @@
      <p id="home"></p>
     <div class="home">
         
+   
+          
         <style>
             body {
               background-image: url('images/me.jpg');
               background-size:100%;
               background-repeat: no-repeat; 
             }
+            
             </style>
+            
         <!-- <img src="images/me.jpg" /> -->
      <h2 class="title">Hello,It's me!</h2>   
      <div id="start">
@@ -51,10 +71,20 @@
         <p> 안녕하세요! 위코드 34기 수강생 정지민입니다.<br>백엔드 개발자를 목표로 둔 햇병아리가 먼 훗 날 풀스택 개발자가 되도록 열심히 갈고닦겠습니다!</p>
         
        </div>
+       <div id="lb-audio">
+        <audio autoplay loop controls>
+          <source src="you.mp3" type="audio/mpeg">  
+        </audio>
+    </div>
  </div>
 
 <p id="profile"></p>
-<div class="profile"></div>
+<div class="profile">
+    <div class="test_obj" >
+
+    <img class="img_name"src="images/standme.png" height="80%"; style="margin-top: 0px;padding-top: 100px;" />
+    </div>
+</div>
 
 <p id="aboutme"></p>
 <div class="aboutme"></div>
